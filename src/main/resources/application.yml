@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: study
+    password: study
+    url: jdbc:mysql://47.113.147.150:3306/study?useUnicode=true&characterEncoding=utf-8
+  mail:
+    host: smtp.163.com
+    username: hanxi202307@163.com
+    password: SIXOIRFZSMIDJPQX
+    port: 465
+    properties:
+      from: hanxi202307@163.com
+      mail:
+        smtp:
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+  data:
+    redis:
+      database: 0
+      host: 47.113.147.150
+      port: 6379
+      password: hanxi
